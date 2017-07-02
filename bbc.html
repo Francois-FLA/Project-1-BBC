@@ -1,73 +1,143 @@
-#mainpagearticle {
-        position: relative;
-        width: 900px;
+<!DOCTYPE html>
+<html>
     
-}
+<head>
+    <title>Exemple 1 : BBC</title>
+    <link type="text/css" rel="stylesheet" href="bbcss.css">     
 
-.titlecontainer {
-        text-decoration: none;
-        font-size: 120%;    
-        font-family: Arial;
-        font-size: 120%;
-}
+</head>
 
-.bigtitle{
-    font-size: bold; 
-    font-family: Arial;    
-}
+<body>
+    <div id="mainpagearticle">
+    
+    <span class="titlecontainer">
+        <p><a href="http://www.bbc.com/news/technology" >Technology</a></p> 
+    </span>
+    
+    <span class="bigtitle">
+    <h1>Asda bug exposed online shopping payment details</h1>
+    </span>
 
-.repname {
-    font-family: Arial;
-    font-size: 90%;
-}
+    <div class="repname">
+    <p>By Jane Wakefield, <br>Technology reporter</p>
+    </div>
+    
+    <div class="timeline">
+    <p>19 January 2016 | <a href="http://www.bbc.com/news/technology">Technology</a></p>
+    </div>
+    
+    <hr>
+    
+    <div class="mainimg" >
+    <img src="img/asda.gif" style="max-width: 700px;">
+    </div>
+    
+    <div id="maintext">
+        <span>
+            <p><span class="bolder">A flaw on supermarket Asda's website gave hackers the chance to collect customers' personal information and payment details, the BBC has learned.</span></p>
 
-.mainimg {    
-    max-width: 100%;
-    height: auto;
-    width: auto;
-}
+            <p>The US-owned retail firm, which processes hundreds of thousands of online orders each week, could have put millions of transactions at risk, security expert Paul Moore estimates.</p>
 
-#maintext {
-    font-family: Arial;
-    color:#404046;
-    font-size: 115%;
-    padding: 50px 90px;
-    margin-right: 150px;
-}
+            <p>He first noticed the issue in March 2014 and contacted Asda to report it.</p>
 
-.bolder {
-    font-weight: bold;
-}
+            <p>Asda said it had now fixed the problem and no customers had been affected.</p>
 
-.linkmaintext:link {
-    color: black;
-}
+            <p>The firm, whose website is run by US retail giant Walmart, told the BBC: "Asda and Walmart take the security of our websites very seriously. We are aware of the issue and have implemented changes to improve the security on our website."</p>
 
-.linkmaintext:visited {
-    color: black;
-}
+            <p>"The points flagged pose a low risk to customers and our monitoring of these security issues indicate that no customer information has been compromised over that two-year period."</p>
 
-.linkmaintext:hover {
-    color:#1167A8;
-}
-.linkmaintext:active {
-    color: black;
-}
+            <p><span class="bolder"><a href="https://paul.reviews/identity-theft-payment-fraud-thats-asda-price/" class="linkmaintext">Since Mr Moore went public with the information</a></span> it has acted to improve its security.</p>
 
-.intext {
-    font-size: 110%;
-}
+            <p>"The small risk to customer information has been removed and an update has been applied, we're now adding further enhancements which will be completed by this evening. In short, one of the two issues is fixed but nothing that remains poses any risk to any customer information or card details," it told the BBC.</p>
 
-#share {    
-    float: left;
-}
+            <p>The issue occurred because of two well-known exploits, cross-site scripting (XSS) and cross-site request forgery (CSRF), which combined, can offer hackers access to all the information users put on the site, said Mr Moore.</p>
 
-.ulshare {
-        display:flex; 
-        margin-left: -40px;
-        margin-top: -15px;
-}
+            <p>It means that - if someone had both the Asda website open and another site that is infected with malware - they could be vulnerable to attack.</p>
 
-#rightsidearticle {
-    float:right;
-}
+            <p>"CSRF exploits the trust a site has in the user's browser, allowing an attacker to issue requests on your behalf and from your own PC. XSS allows an attacker to embed malicious content into the page to alter anything and everything the user can see," he explained.</p>
+
+            <p>Asda is by no means alone in having a website open to these security flaws but Mr Moore believes that it should have acted more quickly to rectify the problem.</p>
+
+            <p>"Back in March 2014, I contacted Asda to report several security vulnerabilities and despite a fix promised 'in the next few weeks', little appears to have changed," he said.</p>
+
+            <p>"Asda also failed to issue adequate security headers which help mitigate the risk by instructing the browser to discard content which ASDA deem malicious or unnecessary. The majority of modern browsers support content security policy (CSP) which effectively blocks this type of attack, but very few sites adopt this technique," he added.</p>
+
+            <p>When he published his blog, he advised users "to shop elsewhere".</p>
+
+            <p>"Asda/Walmart have had ample opportunity to fix these issues and have failed to do so. If you must continue shopping with Asda, open a private window and do not open any other tabs or windows until you've logged out," he added.</p>
+
+            <p><span class="intext">Open tabs</span></p>
+
+            <p>Prof Alan Woodward, a security expert from the University of Surrey, said that Asda's assertion that its site is secure is correct but that does not mean that users are not at risk.</p>
+
+            <p>"Cross-site scripting can easily be exploited by hackers if someone has a website open that has this malware embedded at the same time as they are shopping online and the shopping site has not protected the data entry fields appropriately," he said.</p>
+
+            <p>"Most people do have dozens of tabs open at any given time."</p>
+
+            <p>He did not go as far as suggesting people stop shopping there but added: "I think I'd play safe and make sure you have only one tab open just in case one of your other sites is infected."</p>
+
+            <p>"This is an example of of how companies need to look beyond the boundaries of their own website. This is a common exploit but it can be very easily fixed. It is half a line of code that can fix it," he added.</p>
+
+            <p>There are scanners available online that can immediately tell whether websites have the correct security headers.</p>
+
+            <p>One such site that scans the web for such headers found that, out of the million most popular websites, only 1,365 sites had them in place.</p>
+        
+        </span>
+        </div>
+        
+        <hr>
+        
+        <p>Related Topics</p>
+        
+        <ul>
+            <li><a href="http://www.bbc.com/news/topics/0432739c-283c-4c8f-b28a-343d12697441/asda">Asda</a></li>
+            <li><a href="http://www.bbc.com/news/topics/62d838bb-2471-432c-b4db-f134f98157c2/cybersecurity">Computer security</a></li>
+        </ul>
+        
+        <hr>
+        <br>
+        
+        <div id="share">
+        <p>Share this Story <a href="http://www.bbc.co.uk/help/web/sharing.shtml">About sharing</a></p>
+        
+        
+        
+            <ul type="none" class="ulshare">
+                
+                <li><a href="mailto:?subject=Shared%20from%20BBC%20News&body=http%3A%2F%2Fwww.bbc.com%2Fnews%2Ftechnology-35350789"><img src="img/mailshare.svg" height=40px width=40px></a></li>
+                
+                <li><a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=58567469885&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Ffeed%3Fapp_id%3D58567469885%26redirect_uri%3Dhttp%253A%252F%252Fwww.bbc.com%252Fnews%252Ftechnology-35350789%26link%3Dhttp%253A%252F%252Fwww.bbc.com%252Fnews%252Ftechnology-35350789%253FSThisFB%26display%3Dpopup&cancel_url=http%3A%2F%2Fwww.bbc.com%2Fnews%2Ftechnology-35350789%3Ferror_code%3D4201%26error_message%3DUser%2Bcanceled%2Bthe%2BDialog%2Bflow%23_%3D_&display=popup&locale=fr_FR"><img src="img/fb-art.png" height=40px width=40px></a></li>
+                
+                <li><a href="fb-messenger://share?app_id=58567469885&redirect_uri=http%3A%2F%2Fwww.bbc.com%2Fnews%2Ftechnology-35350789&link=http%3A%2F%2Fwww.bbc.com%2Fnews%2Ftechnology-35350789%3FCMP%3Dshare_btn_me"><img src="img/fbsharemess.svg" height=40px width=40px></a></li>
+                
+                <li><a href="https://twitter.com/intent/tweet?text=BBC%20News%20-%20Asda%20bug%20exposed%20online%20shopping%20payment%20details&url=http%3A%2F%2Fwww.bbc.com%2Fnews%2Ftechnology-35350789"><img src="img/Twitter-icon.png"height=40px width=40px></a></li>
+                
+                <li><a href="https://uk.pinterest.com/?next=/pin/create/bookmarklet/%3Furl%3Dhttp%253A%252F%252Fwww.bbc.com%252Fnews%252Ftechnology-35350789%26description%3DSecurity%2520vulnerabilities%2520that%2520put%2520customers%2520at%2520risk%2520have%2520affected%2520Asda%2527s%2520website%2520for%2520a%2520couple%2520of%2520years%252C%2520a%2520security%2520expert%2520has%2520revealed.%26title%3DAsda%2520bug%2520exposed%2520online%2520shopping%2520payment%2520details%26media%3Dhttp%253A%252F%252Fwww.bbc.co.uk%252Fnews%252Fspecial%252F2015%252Fnewsspec_10857%252Fbbc_news_logo.png%253Fcb%253D1"><img src="img/pinterest-icon.png" height=40px width=40px></a></li>
+                
+                <li><a href="https://www.linkedin.com/start/join?trk=login_reg_redirect&session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fsharing%2Fshare-offsite%3Fmini%3Dtrue%26url%3Dhttp%253A%252F%252Fwww.bbc.com%252Fnews%252Ftechnology-35350789%26title%3DAsda%2520bug%2520exposed%2520online%2520shopping%2520payment%2520details%26summary%3DSecurity%2520vulnerabilities%2520that%2520put%2520customers%2520at%2520risk%2520have%2520affected%2520Asda%2527s%2520website%2520for%2520a%2520couple%2520of%2520years%252C%2520a%2520security%2520expert%2520has%2520revealed.%26source%3DBBC"><img src="img/Danleech-Simple-Linkedin.ico" height=40px width=40px></a></li>
+                
+                
+            </ul>
+    </div>
+    </div>
+    
+    <div id="rightsidearticle">
+        <div class="stopstories">  
+            <p>Top Stories</p>
+            <p>Damascus bomber strikes after car chase</p>
+            <p>Hostages shown in al-Qaeda Mali video</p>
+            <p>I'm modern day presidential, says Trump</p> 
+        </div>
+        
+        <div class="features">
+        </div>
+        
+        <div class="mostread">
+        </div>
+
+    </div>
+    
+    
+</body>
+
+</html>
