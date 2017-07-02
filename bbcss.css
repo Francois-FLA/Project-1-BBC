@@ -1,0 +1,73 @@
+#mainpagearticle {
+        position: relative;
+        width: 900px;
+    
+}
+
+.titlecontainer {
+        text-decoration: none;
+        font-size: 120%;    
+        font-family: Arial;
+        font-size: 120%;
+}
+
+.bigtitle{
+    font-size: bold; 
+    font-family: Arial;    
+}
+
+.repname {
+    font-family: Arial;
+    font-size: 90%;
+}
+
+.mainimg {    
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+#maintext {
+    font-family: Arial;
+    color:#404046;
+    font-size: 115%;
+    padding: 50px 90px;
+    margin-right: 150px;
+}
+
+.bolder {
+    font-weight: bold;
+}
+
+.linkmaintext:link {
+    color: black;
+}
+
+.linkmaintext:visited {
+    color: black;
+}
+
+.linkmaintext:hover {
+    color:#1167A8;
+}
+.linkmaintext:active {
+    color: black;
+}
+
+.intext {
+    font-size: 110%;
+}
+
+#share {    
+    float: left;
+}
+
+.ulshare {
+        display:flex; 
+        margin-left: -40px;
+        margin-top: -15px;
+}
+
+#rightsidearticle {
+    float:right;
+}
