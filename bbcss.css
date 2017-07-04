@@ -1,29 +1,52 @@
 #topbar {
-    width: 900px;
-    margin: ;
+    width: 990px;
     background-color: #BB1919;
     height: 40px;
     position: relative;
 }
+
+@media screen and (max-width: 600px) {
+    #topbar {
+        width: 500px;
+        background-color:aquamarine;
+        height: 40px;
+        position: relative;
+}
+}
+
 
 .newstitle {
     font-family: Arial;
     font-size: 220%;
     color: white;
 }
+
+
 #topmenu {
     background-color: #A91717;
-    width: 900px;
+    width: auto;
     height: 20px;
     margin: 0 auto;
     margin-top: -35px;
     color: white;
 }
 
+@media screen and (max-width: 600px) {
+    #topmenu {
+        background-color:aqua;
+        width: auto;
+        height: 20px;
+        margin: 0 auto;
+        margin-top: -35px;
+        color: white;
+    }     
+}
+
+
 .ultopmenu {
     display: flex;
     margin: 0 auto;
-    margin-left: -40px;
+    float: left;
 }
 
 .toplink:link {
@@ -41,7 +64,7 @@
 
 #mainpagearticle {
         position:inherit;
-        width: 900px;    
+        width: auto;    
 }
 
 .technotitle{
@@ -53,10 +76,13 @@
 }
 
 .titlecontainer {
+    position: inherit;
+}
+.titlecontainerspa {
         text-decoration: none;
         font-size: 120%;    
         font-family: Arial;
-        font-size: 120%;
+        font-size: 120%; 
 }
 
 .bigtitle{
@@ -95,7 +121,7 @@
 #pictext {
     background-color: black;
     color: white;
-    width: 900px;
+    width: 990px;
     height: 45px;
     margin-top: -40px;
     position: absolute;
@@ -141,6 +167,10 @@
     font-size: 110%;
 }
 
+.related {
+    display: flex;
+}
+
 #share {    
     float: left;
 }
@@ -154,3 +184,34 @@
 #rightsidearticle {
     float:right;
 }
+
+@media all and (max-width: 600px)
+{
+    nav
+    {
+        width: auto;
+        text-align: left;
+    }
+    
+    nav ul
+    {
+        flex-direction: column;
+    }
+
+    nav li
+    {
+        padding-left: 4px;
+    }
+    
+    nav a
+    {
+        font-size: 1.1em;
+    }
+    
+    nav a:hover
+    {
+        border-bottom: 0;
+    }
+}
+
+    
